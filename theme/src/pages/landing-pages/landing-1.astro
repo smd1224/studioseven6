@@ -13,17 +13,16 @@ import Layout from '../../layouts/Page.astro';
 import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
 
 const seo = {
-	title: 'Landing Page #1 | Astro Odyssey Theme',
-	description: 'Landing Page #1 | Astro Odyssey Theme',
+	title: 'Landing Page | Studio Seven6 Yoga',
+	description: 'Landing Page | Studio Seven6 Yoga',
 };
 ---
 
-<AnnouncementBar text="Read Our Latest Blog Post" href="/blog/posts/remote-work-mental-health/" slot="announcement-bar"/>
 <Layout seo={seo} >
 	<TextAndImageHero reversed>
 		<div slot="text-container">
-			<h1>Don't Reinvent the Wheel</h1>
-			<p>Use Odyssey Theme to jumpstart your company's marketing website.</p>
+			<h2>YOGA ● STRETCH ● REVOVER</h2>
+			<p>YOGA STRETCH RECOVER</p>
 		</div>
 		<div slot="btns-container">
 			<Button href="/theme/get-started" customIcon
@@ -34,52 +33,36 @@ const seo = {
 		</div>
 		<picture slot="image-container">
 			<img
-				src="/assets/images/landing-1/landing-hero-1.jpg"
+				src="/assets/images/yoga-bg.jpeg"
 				alt="Astro Odyssee"
 				id="home-hero-image"
 			/>
 		</picture>
 	</TextAndImageHero>
 
-	<CustomerQuoteSection
-		quoteText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero nobis? Voluptas assumenda, voluptatibus commodi qui ducimus delectus praesentium maiores, impedit iure labore ratione, ea facilis numquam doloremque aperiam aspernatur."
-		customerName="Happy Customer"
-	/>
-
 	<ThreeColumnTextSection>
 		<div slot="column-1-body">
+			<h2>Where?</h2>
+			<p>
+				We are located inside of Northride Fitness at 300 Mcfarland Blvd Northport, AL 35406
+			</p>
+		</div>
+		<Button slot="column-1-cta">Get Directions</Button>
+		<div slot="column-2-body">
+			<h2>When?</h2>
+			<p>
+				Come to one of our classes posted the schedule here on our site or on our socials!
+			</p>
+		</div>
+		<Button slot="column-2-cta" outlined>View Schedule</Button>
+		<div slot="column-3-body">
 			<h2>Why?</h2>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
-		</div>
-		<Button slot="column-1-cta">Learn More</Button>
-		<div slot="column-2-body">
-			<h2>How?</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
-		</div>
-		<Button slot="column-2-cta" outlined>Learn More</Button>
-		<div slot="column-3-body">
-			<h2>What?</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
+				Yoga improves strength and flexibility, eases stress and anxiety levels, improves sleep, and so more more!
 			</p>
 		</div>
 		<Button slot="column-3-cta">Learn More</Button>
 	</ThreeColumnTextSection>
-
-	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=cbYr75_R15M" rounded />
 
   <StickyTextImageSection>
     <div slot="text-container">
@@ -114,14 +97,6 @@ const seo = {
       />
     </picture>
   </StickyTextImageSection>
-
-  <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
-    <h2>Start Your Website Today</h2>
-    <p>It only takes a couple clicks to have a new, modern website for your business or startup.</p>
-    <Button href="/theme/get-started" customIcon>Get Started <Fragment slot="icon">
-      <Icon name="ic:baseline-chevron-right"/>
-    </Fragment></Button>
-  </CtaCardSection>
 
 </Layout>
 
