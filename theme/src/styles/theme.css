@@ -1,17 +1,17 @@
 :root {
 	/* Theme Colors */
-	--theme-primary: rgb(45, 56, 59);
-	--theme-primary-hover: rgb(63, 78, 79);
-	--theme-on-primary: rgb(248, 243, 228);
+	--theme-primary: rgb(63, 78, 79);
+	--theme-primary-hover: rgb(44, 54, 57);
+	--theme-on-primary: rgb(230, 224, 209);
 
 	--theme-bg: rgb(220, 215, 201);
-	--theme-on-bg: rgb(37, 46, 49);
+	--theme-on-bg: rgb(63, 78, 79);
 
 	--theme-surface-1: rgb(201, 196, 182);
-	--theme-on-surface-1: rgb(37, 46, 49);
+	--theme-on-surface-1: rgb(63, 78, 79);
 
 	--theme-surface-2: rgb(162, 123, 92);
-	--theme-on-surface-2: rgb(37, 46, 49);
+	--theme-on-surface-2: rgb(63, 78, 79);
 
 	/* Theme Shapes */
 	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
