@@ -1,6 +1,7 @@
 ---
-import { Header, Button, Footer } from '@littlesticks/odyssey-theme-components';
+import { Header, Button } from '@littlesticks/odyssey-theme-components';
 import Layout from './Base.astro';
+import Footer from "../components/OdesseyComponents/core/Footer.astro"
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import Logo from '../components/Logo.astro';
 import settings from '../config/settings';
@@ -19,7 +20,7 @@ const { seo } = Astro.props as Props;
 <Layout seo={seo}>
 	<Header rightMenu navData={nav} slot="header">
 		<span slot="logo">
-			<Logo />
+			<Logo class = "header-logo" />
 		</span>
 	</Header>
 	<div id="page">
