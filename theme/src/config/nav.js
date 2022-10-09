@@ -5,11 +5,11 @@ export const nav = [
 	},
 	{
 		title: 'Schedule',
-		slug: '/schedule',
+		slug: '/company/schedule',
 	},
 	{
-		title: 'About',
-		slug: '/company/about',
+		title: 'Our Team',
+		slug: '/company/team',
 	},
 	{
 		title: 'Contact',

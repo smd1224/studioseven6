@@ -27,7 +27,7 @@ const seo = {
 		<picture slot="image-container">
 			<img
 				src="/assets/images/yoga-bg.jpeg"
-				alt="Astro Odyssee"
+				alt="Basic Yoga Image"
 				id="home-hero-image"
 			/>
 		</picture>
@@ -40,21 +40,21 @@ const seo = {
 				We are located inside of NorthRidge Fitness at 300 Mcfarland Blvd Northport, AL 35476
 			</p>
 		</div>
-		<Button slot="column-1-cta">Get Directions</Button>
+		<Button href="http://maps.google.com/?q=300 Mcfarland Blvd Northport, AL 35476" newTab = {true} slot="column-1-cta">Get Directions</Button>
 		<div slot="column-2-body">
 			<h2>When?</h2>
 			<p>
 				Come to one of our classes posted the schedule here on our site or on our socials!
 			</p>
 		</div>
-		<Button slot="column-2-cta" outlined>View Schedule</Button>
+		<Button href = "/company/schedule" slot="column-2-cta" outlined>View Schedule</Button>
 		<div slot="column-3-body">
-			<h2>Why?</h2>
+			<h2>Who?</h2>
 			<p>
-				Yoga improves strength and flexibility, eases stress and anxiety levels, improves sleep, and so more more!
+				We have a wonderful team of instructors deticated to helping you with yoga no matter what stage you are at!
 			</p>
 		</div>
-		<Button slot="column-3-cta">Learn More</Button>
+		<Button href = '/company/team' slot="column-3-cta">Meet the Team</Button>
 	</ThreeColumnTextSection>
 
   <StickyTextImageSection>

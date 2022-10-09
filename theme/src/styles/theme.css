@@ -1,22 +1,22 @@
 :root {
 	/* Theme Colors */
-	--theme-primary: rgb(27, 46, 61);
-	--theme-primary-hover: rgb(79, 145, 160);
-	--theme-on-primary: rgb(243, 249, 251);
+	--theme-primary: rgb(72, 141, 197);
+	--theme-primary-hover: rgb(116, 176, 255);
+	--theme-on-primary: rgb(255, 255, 255);
 
-	--theme-bg: #eff6ff;
-	--theme-on-bg: rgb(27, 46, 61);
+	--theme-bg: #fcfcfc;
+	--theme-on-bg: rgb(19, 19, 19);
 
-	--theme-surface-1: rgb(172, 223, 235);
-	--theme-on-surface-1: rgb(29, 43, 54);
+	--theme-surface-1: rgb(230, 230, 230);
+	--theme-on-surface-1: rgb(19, 19, 19);
 
-	--theme-surface-2: rgb(162, 123, 92);
+	--theme-surface-2: rgb(176, 225, 236);
 	--theme-on-surface-2: rgb(63, 78, 79);
 
 	/* Theme Shapes */
 	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
 	--theme-shape-radius: clamp(1rem, 2rem, 3rem);
-	--theme-button-border-radius: 3rem;
+	--theme-button-border-radius: 2rem;
 
 	/* Theme Transition */
 	--theme-transition: 0.2s ease-in-out;
