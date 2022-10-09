@@ -1,8 +1,7 @@
 ---
 import Container from '../core/Container.astro';
 ---
-
- <Container>
+  <section>
     <section class="three-col-text__section">
       <div class="three-col-text__column">
         <slot name="column-1-body"></slot>
@@ -17,17 +16,18 @@ import Container from '../core/Container.astro';
         <slot name="column-3-cta"></slot>
       </div>
     </section>
-  </Container>
-
+</section>
   <style>
   .three-col-text__section {
     --column-count: 3;
     --column-width: calc(100% / var(--column-count));
-    margin: var(--section-margin) auto;
+    background-color: var(--theme-surface-1);
+    margin: calc(var(--section-margin) *3) auto;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-evenly;
+    padding: 3rem 4rem
   }
   .three-col-text__column {
     width: var(--column-width);
