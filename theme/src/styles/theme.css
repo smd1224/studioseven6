@@ -1,13 +1,13 @@
 :root {
 	/* Theme Colors */
 	--theme-primary: rgb(27, 46, 61);
-	--theme-primary-hover: rgb(135, 192, 205);
+	--theme-primary-hover: rgb(79, 145, 160);
 	--theme-on-primary: rgb(243, 249, 251);
 
-	--theme-bg: rgb(243, 249, 251);
+	--theme-bg: #eff6ff;
 	--theme-on-bg: rgb(27, 46, 61);
 
-	--theme-surface-1: rgb(135, 192, 205);
+	--theme-surface-1: rgb(172, 223, 235);
 	--theme-on-surface-1: rgb(29, 43, 54);
 
 	--theme-surface-2: rgb(162, 123, 92);
