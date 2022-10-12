@@ -5,12 +5,13 @@ import {
 	Button,
 	CustomerQuoteSection,
 	YouTubeEmbedSection,
-  StickyTextImageSection,
   CtaCardSection
 } from '@littlesticks/odyssey-theme-components';
 import Layout from '../layouts/Page.astro';
 import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
 import ThreeColumnTextSection from "../components/OdesseyComponents/sections/ThreeColumnTextSection.astro"
+import StickyTextImageSection from "../components/OdesseyComponents/sections/StickyTextImageSection.astro"
+
 const seo = {
 	title: 'Studio Seven6 Yoga',
 	description: 'Studio Seven6 Yoga',
@@ -29,6 +30,7 @@ const seo = {
 				src="/assets/images/yoga-bg.jpeg"
 				alt="Basic Yoga Image"
 				id="home-hero-image"
+        loading="eager"
 			/>
 		</picture>
 	</TextAndImageHero>
@@ -44,7 +46,7 @@ const seo = {
 		<div slot="column-2-body">
 			<h2>When?</h2>
 			<p>
-				Come to one of our classes posted the schedule here on our site or on our socials!
+				Head over to the schedule to view available classes and sign up for the classes you want to attend. We can't wait to see you!
 			</p>
 		</div>
 		<Button href = "/company/schedule" slot="column-2-cta" outlined>View Schedule</Button>
@@ -56,28 +58,29 @@ const seo = {
 		</div>
 		<Button href = '/company/team' slot="column-3-cta">Meet the Team</Button>
 	</ThreeColumnTextSection>
-
+<!-- Fill in details here -->
   <StickyTextImageSection>
     <div slot="text-container">
       <h2>Features</h2>
       <h3>Studio</h3>
       <p>
-        Come see our beutiful newly renovated studio! Fill in details about the studio (or any other feature)
+        Come see our beutiful newly renovated studio!
       </p>
+      
       <h3>Instructors</h3>
         <p>
-        Our instructors... Fill in details about instructors (or any other feature)
+        Our instructors are dedicated to teaching you no matter where you are in your yoga journey!
       </p>
       <h3>Scheduling</h3>
         <p>
-          Fill in details about the schedule (or any other feature)
+          View and sign up for classes online right here on our site or through the momoyoga app!
         </p>
     </div>
      <picture slot="image-container">
       <img
         src="/assets/images/yoga-mat.jpeg"
         alt="Astro Odyssey"
-        loading="lazy"
+        loading="eager"
       />
     </picture>
   </StickyTextImageSection>

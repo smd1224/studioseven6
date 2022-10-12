@@ -24,6 +24,10 @@ export const footerLists = [
 				slug: '/company/schedule',
 			},
 			{
+				title: 'Our Team',
+				slug: '/company/team',
+			},
+			{
 				title: 'Contact',
 				slug: '/company/contact',
 			},
