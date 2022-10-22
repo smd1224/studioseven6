@@ -1,0 +1,17 @@
+---
+import Container from "../../components/OdesseyComponents/core/Container.astro"
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'Schedule | Studio Seven6 Yoga',
+	description: 'Schedule Page',
+};
+---
+
+<Layout seo = {seo}>
+  <Container>
+    <div class="momoyoga-schedule" data-momo-schedule="https://www.momoyoga.com/studioseven6yoga/schedule">
+    </div>
+  </Container>
+</Layout>

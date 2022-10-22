@@ -30,6 +30,7 @@ const { reversed } = Astro.props;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		gap: 1rem;
+    margin-bottom: -2rem;
 	}
 	.text-and-image__section--reversed .text-and-image__text {
 		order: 2;
@@ -48,7 +49,7 @@ const { reversed } = Astro.props;
 	}
 	@media (max-width: 768px) {
 		.text-and-image__section {
-			margin: 2rem auto 0 auto;
+			margin: 2rem auto -2rem auto;
 			grid-template-columns: 1fr;
 		}
 		.text-and-image__text {

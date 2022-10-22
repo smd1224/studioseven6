@@ -1,0 +1,52 @@
+---
+import ContactForm from '../../components/forms/ContactForm.astro';
+import Layout from '../../layouts/Page.astro';
+import {Icon} from 'astro-icon'
+import { Container, Button } from '@littlesticks/odyssey-theme-components';
+import CtaCardSection from "../../components/OdesseyComponents/sections/CtaCardSection.astro"
+
+const seo = {
+	title: 'Register | Studio Seven6 Yoga',
+	description: 'Registration Page',
+};
+---
+
+<Layout seo={seo}>
+	<Container>
+		<CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
+    <h3>Register For Classes With Us Today</h3>
+    <p>Click here to register with our studio on Momoyoga and start signing up for classes!</p>
+    <Button href="https://momoyoga.com/studioseven6yoga/register/" customIcon>Register <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right"/>
+    </Fragment></Button>
+  </CtaCardSection>
+	</Container>
+</Layout>
+
+<style>
+	.contact-hero__section {
+		margin: var(--section-margin) auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		min-height: calc(90vh - var(--navbar-height));
+		gap: 3rem;
+	}
+	.contact-hero__text-section {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.col-2__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		.contact-hero__section {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

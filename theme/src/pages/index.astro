@@ -1,94 +1,94 @@
 ---
-import { Container, FeatureCard} from '@littlesticks/odyssey-theme-components';
-
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	YouTubeEmbedSection,
+} from '@littlesticks/odyssey-theme-components';
 import Layout from '../layouts/Page.astro';
-import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
+import ThreeColumnTextSection from "../components/OdesseyComponents/sections/ThreeColumnTextSection.astro"
+import StickyTextImageSection from "../components/OdesseyComponents/sections/StickyTextImageSection.astro"
+import CtaCardSection from "../components/OdesseyComponents/sections/CtaCardSection.astro"
+
+const seo = {
+	title: 'Studio Seven6 Yoga',
+	description: 'Studio Seven6 Yoga',
+};
 ---
 
-<Layout>
-	<HomeHeroSection />
-	<Container>
-		<section class="feature-card__section">
-			<h2>Landing Pages</h2>
-			<p>
-				Use one of our landing pages to jumpstart your website or
-				ad campaign.
-			</p>
-			<div class="feature-card__grid">
-				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
-				</FeatureCard>
-				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
-				</FeatureCard>
-        <FeatureCard href="#" title="Landing Page 3" imgSrc="/assets/images/home/screenshots/landing-3">
-				</FeatureCard>
-			</div>
-		</section>
-	</Container>
+<Layout seo={seo} >
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h3>Yoga  .  Stretch  .  Recover</h3>
+      <p>Northport and Tuscaloosa's newest yoga studio specializing in a variety of types of yoga.</p>
+			
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/yoga-bg.jpeg"
+				alt="Basic Yoga Image"
+				id="home-hero-image"
+        loading="eager"
+			/>
+		</picture>
+	</TextAndImageHero>
 
-	<Container>
-		<section class="feature-card__section">
-			<h2>Company Pages</h2>
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<h2>Where?</h2>
 			<p>
-				Use one of our prebuilt company pages for your about page, contact page,
-				legal pages, blog posts, etc.
+				We are located inside of NorthRidge Fitness at 300 Mcfarland Blvd Northport, AL 35476
 			</p>
-			<div class="feature-card__grid">
-				<FeatureCard href="/company/about" title="About Page" imgSrc="/assets/images/home/screenshots/about">
-				</FeatureCard>
-				<FeatureCard href="/company/contact" title="Contact Page" imgSrc="/assets/images/home/screenshots/contact">
-				</FeatureCard>
-				<FeatureCard href="/blog/" title="Blog Page" imgSrc="/assets/images/home/screenshots/blog">
-				</FeatureCard>
-				<FeatureCard
-					href="/blog/posts/remote-work-mental-health"
-					title="Blog Post"
-          imgSrc="/assets/images/home/screenshots/blog-post"
-				>
-				</FeatureCard>
-				<FeatureCard
-					href="/company/legal"
-					imgSrc="/assets/images/home/screenshots/legal"
-					title="Legal Page"
-				>
-				</FeatureCard>
-			</div>
-		</section>
-	</Container>
+		</div>
+		<Button href="http://maps.google.com/?q=300 Mcfarland Blvd Northport, AL 35476" newTab = {true} slot="column-1-cta">Get Directions</Button>
+		<div slot="column-2-body">
+			<h2>When?</h2>
+			<p>
+				View and sign up for classes right here on our site or through the momoyoga app!
+			</p>
+		</div>
+		<Button href = "/company/schedule" slot="column-2-cta" outlined>View Schedule</Button>
+		<div slot="column-3-body">
+			<h2>Who?</h2>
+			<p>
+				We have a wonderful team of instructors dedicated to helping you with yoga no matter what stage you are at!
+			</p>
+		</div>
+		<Button href = '/company/team' slot="column-3-cta">Meet the Team</Button>
+	</ThreeColumnTextSection>
+<!-- Fill in details here -->
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>Features</h2>
+      <h3>Studio</h3>
+      <p>
+        Come see our beautiful newly renovated studio!
+      </p>
+      
+      <h3>Instructors</h3>
+        <p>
+        With a variety of skilled instructors, you are sure to be able to find the right class for you!
+      </p>
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/yoga-mat.jpeg"
+        alt="Astro Odyssey"
+        loading="eager"
+      />
+    </picture>
+  </StickyTextImageSection>
 
-	<Container>
-		<section class="feature-card__section">
-			<h2>Theme Pages</h2>
-			<p>Learn more about how to set up and use the Odyssey Theme.</p>
-			<div class="feature-card__grid">
-				<FeatureCard
-					href="/theme/get-started"
-					imgSrc="/assets/images/home/screenshots/get-started"
-					title="Get Started"
-				>
-				</FeatureCard>
-				<FeatureCard
-					href="/theme/style-guide"
-					imgSrc="/assets/images/home/screenshots/style-guide"
-					title="Style Guide"
-				>
-				</FeatureCard>
-			</div>
-		</section>
-	</Container>
+  <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
+    <h3>Register For Classes With Us Today</h3>
+    <p>Click here to register with our studio on Momoyoga and start signing up for classes!</p>
+    <Button href="https://momoyoga.com/studioseven6yoga/register/" customIcon>Register <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right"/>
+    </Fragment></Button>
+  </CtaCardSection>
+
 </Layout>
 
-<style>
-	.feature-card__section {
-		margin: var(--section-margin) auto;
-	}
-	.feature-card__grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: var(--theme-grid-gap);
-	}
-	@media (max-width: 768px) {
-		.feature-card__grid {
-			grid-template-columns: 1fr;
-		}
-	}
-</style>
+
