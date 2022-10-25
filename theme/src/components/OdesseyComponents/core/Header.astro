@@ -49,10 +49,12 @@ const { navData, rightMenu } = Astro.props;
       <Icon name="ic:baseline-close" width="24px" height="24px" />
     </span>
   </button>
+  <div class = "header-logo-container">
   <a class="header-logo__link" href="/">
     <slot name="logo">
     </slot>
   </a>
+  </div>
   </div>
   <div class="header-nav__container">
     <slot name="nav">
@@ -132,6 +134,9 @@ const { navData, rightMenu } = Astro.props;
     #menuButton {
       display: block;  
       z-index: 100;
+    }
+    .header-logo-container{
+      margin-left:16.5vw;
     }
     .header-nav__container {
       width: 100%;
