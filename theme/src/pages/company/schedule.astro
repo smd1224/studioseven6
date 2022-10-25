@@ -10,8 +10,16 @@ const seo = {
 ---
 
 <Layout seo = {seo}>
-  <Container>
+
+    <section>
     <div class="momoyoga-schedule" data-momo-schedule="https://www.momoyoga.com/studioseven6yoga/schedule">
     </div>
-  </Container>
+    </section>
+
 </Layout>
+
+<style>
+  section {
+    padding: var(--section-margin) calc(var(--section-margin) * 2) calc(var(--section-margin) * 2)
+  }
+</style>

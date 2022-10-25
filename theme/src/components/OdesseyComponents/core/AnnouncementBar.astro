@@ -1,7 +1,7 @@
 ---
 const {text, href, newTab} = Astro.props;
 ---
-
+<meta charset="utf-8" />
 <div class="announcement-banner__container">
   <p>
     {newTab ?
@@ -9,7 +9,7 @@ const {text, href, newTab} = Astro.props;
       {text}
     </a> :
     <a href={href}>
-      {text}
+     {text}
     </a>}
   </p>
 </div>
@@ -20,12 +20,17 @@ const {text, href, newTab} = Astro.props;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--theme-primary);
-  color: var(--theme-on-primary);
+  background-color: var(--theme-surface-2);
+  color: var(--theme-on-surface-2);
   position: relative;
   z-index: 100;
+  border-bottom-left-radius: var(--theme-shape-radius) ;
+  border-bottom-right-radius: var(--theme-shape-radius) ;
 }
 .announcement-banner__container p {
   margin: 0 auto;
+}
+a {
+  text-decoration: none;
 }
 </style>

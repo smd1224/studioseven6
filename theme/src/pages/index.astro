@@ -1,7 +1,6 @@
 ---
 import {Icon} from 'astro-icon'
 import {
-  AnnouncementBar,
 	Button,
 	CustomerQuoteSection,
 	YouTubeEmbedSection,
@@ -11,12 +10,14 @@ import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astr
 import ThreeColumnTextSection from "../components/OdesseyComponents/sections/ThreeColumnTextSection.astro"
 import StickyTextImageSection from "../components/OdesseyComponents/sections/StickyTextImageSection.astro"
 import CtaCardSection from "../components/OdesseyComponents/sections/CtaCardSection.astro"
+import AnnouncementBar from "../components/OdesseyComponents/core/AnnouncementBar.astro"
 
 const seo = {
 	title: 'Studio Seven6 Yoga',
 	description: 'Studio Seven6 Yoga',
 };
 ---
+<AnnouncementBar text="🎉 Opening Day is October 25th! 🎉" href="/company/schedule" slot="announcement-bar" />
 
 <Layout seo={seo} >
 	<TextAndImageHero reversed>
