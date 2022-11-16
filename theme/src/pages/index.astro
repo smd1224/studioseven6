@@ -14,15 +14,15 @@ import AnnouncementBar from "../components/OdesseyComponents/core/AnnouncementBa
 
 const seo = {
 	title: 'Studio Seven6 Yoga',
-	description: 'Studio Seven6 Yoga',
+	description: 'Tuscaloosa and Northports newest Yoga studio Northport Tuscaloosa Northridge fitness wellness meditate',
 };
 ---
-<AnnouncementBar text="🎉 Opening Day is October 25th! 🎉" href="/company/schedule" slot="announcement-bar" />
+<AnnouncementBar text="Grab a friend and come to yoga! It's Bring a Friend Week!" href = "/company/schedule" />
 
 <Layout seo={seo} >
 	<TextAndImageHero reversed>
 		<div slot="text-container">
-			<h3>Yoga  .  Stretch  .  Recover</h3>
+			<h1 class = "title">Yoga  .  Stretch  .  Recover</h1>
       <p>Northport and Tuscaloosa's newest yoga studio specializing in a variety of types of yoga.</p>
 			
 		</div>
@@ -91,5 +91,17 @@ const seo = {
   </CtaCardSection>
 
 </Layout>
+
+<style>
+  .title{
+    display: block;
+  font-size: 1.75em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  }
+</style>
 
 
