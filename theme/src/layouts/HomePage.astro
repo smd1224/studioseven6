@@ -1,0 +1,40 @@
+---
+import Layout from './HomeBase.astro';
+import Footer from "../components/OdesseyComponents/core/Footer.astro"
+import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
+import Logo from '../components/Logo.astro';
+import settings from '../config/settings';
+import { footerLists, footerSocials } from '../config/footer';
+import Header from "../components/OdesseyComponents/core/Header.astro"
+
+
+export interface Props {
+	seo?: BaseHeadProps;
+}
+
+import { nav } from '../config/nav.js';
+
+const { seo } = Astro.props as Props;
+---
+
+<Layout seo={seo}>
+	<Header rightMenu navData={nav} slot="header">
+		<span slot="logo">
+			<Logo class = "header-logo" />
+		</span>
+	</Header>
+	<div id="page">
+		<slot />
+	</div>
+	<Footer
+		slot="footer"
+		background="var(--theme-surface-1)"
+		color="var(--theme-on-surface-1)"
+		footerLists={footerLists}
+    footerSocials={footerSocials}
+		copyrightName={settings.name}
+    showLittleSticksPlug={settings.showLittleSticksPlug}
+	>
+		<Logo slot="logo" />
+	</Footer>
+</Layout>

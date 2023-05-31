@@ -27,4 +27,8 @@ export const nav = [
 		title: 'Pricing',
 		slug: '/company/pricing',
 	},
+	{
+		title: 'Socials',
+		slug: '/company/socials',
+	},
 ];

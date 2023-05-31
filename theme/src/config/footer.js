@@ -44,6 +44,10 @@ export const footerLists = [
 				title: 'Pricing',
 				slug: '/company/pricing',
 			},
+			{
+				title: 'Socails',
+				slug: '/company/Socials',
+			},
 		],
 	},
 ];

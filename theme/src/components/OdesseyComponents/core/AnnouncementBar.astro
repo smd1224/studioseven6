@@ -1,15 +1,33 @@
 ---
 const {text, href, newTab} = Astro.props;
 ---
-<meta charset="utf-8" />
-<div class="announcement-banner__container">
-  <p>
-    {newTab ?
-    <a class = "announcment-link" href={href} target="_blank" rel="noopener noreferrer">
-      {text}
-    </a> :
-    <a class = "announcment-link" href={href}>
-     {text}
-    </a>}
+<div id="announcement-bar" >
+  <div class="flex items-center gap-x-6 bg-[#D7E4EE] px-6 pt-2.5 pb-0 sm:px-3.5 sm:before:flex-1" >
+    <p class="text-sm leading-6">
+      <a href="/company/socials">
+      <strong class="font-semibold">Discover MELT</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Check out this short video for more information&nbsp;<span aria-hidden="true">&rarr;</span>
+    </a>
   </p>
+  <div class="flex flex-1 justify-end">
+    <button type="button" id="ab-button" class="-m-3 p-3 mb-0 focus-visible:outline-offset-[-4px]">
+      <span class="sr-only">Dismiss</span>
+      <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+      </svg>
+    </button>
+  </div>
+  </div>
 </div>
+<script>
+function toggleBar() {
+  var x = document.getElementById("announcement-bar");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+let button = document.getElementById("ab-button");
+button.addEventListener('click', () => toggleBar());
+
+</script>

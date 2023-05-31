@@ -1,11 +1,10 @@
 ---
 import {Icon} from 'astro-icon'
-import Layout from '../layouts/Page.astro';
+import Layout from '../layouts/HomePage.astro';
 import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
 import ThreeColumnTextSection from "../components/OdesseyComponents/sections/ThreeColumnTextSection.astro"
 import StickyTextImageSection from "../components/OdesseyComponents/sections/StickyTextImageSection.astro"
 import CtaCardSection from "../components/OdesseyComponents/sections/CtaCardSection.astro"
-import AnnouncementBar from "../components/OdesseyComponents/core/AnnouncementBar.astro"
 import Button from '../components/OdesseyComponents/buttons/Button.astro';
 
 const seo = {
@@ -13,8 +12,6 @@ const seo = {
 	description: 'Tuscaloosa and Northports newest Yoga studio Northport Tuscaloosa Northridge fitness wellness meditate relax',
 };
 ---
-<!-- <AnnouncementBar text="• Get 3 Classes for $35 •" href = "/company/schedule" /> -->
-
 <Layout seo={seo} >
 	<TextAndImageHero reversed>
 		<div slot="text-container">

@@ -1,0 +1,16 @@
+---
+import Container from "../../components/OdesseyComponents/core/Container.astro"
+import Layout from '../../layouts/Page.astro';
+import YouTubeEmbed from '../../components/OdesseyComponents/core/YouTubeEmbed.astro'
+
+const seo = {
+	title: 'Socials | Studio Seven6 Yoga',
+	description: 'Social Media embed Page',
+};
+---
+
+<Layout seo = {seo}>
+    <Container>
+      <YouTubeEmbed url="https://www.youtube.com/watch?v=TRXn1Eg-n7c"  rounded/>
+    </Container>
+</Layout>
