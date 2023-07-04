@@ -200,3 +200,40 @@ button.btn {
 		grid-template-columns: 1fr;
 	}
 }
+/* .momoyoga-schedule {
+	font-family: var(--theme-font-family-sans);
+}
+/* (the style of the name of the day) */
+/*   */
+/* (the style of the display of the date) */
+/* .momoyoga-date  */
+/* (the style of displaying the class title) */
+/* .momoyoga-lesson-title {
+	color: var(--theme-primary);
+} */
+/* (the style of displaying the start time of the class) */
+/* .momoyoga-lesson-time {
+	color: var(--theme-primary-hover);
+}
+.momoyoga-lesson-action {
+	background-color: var(--theme-primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 3px;
+	margin-right: 3px;
+	border-radius: var(--theme-button-border-radius);
+} */
+
+/* (the style of the 'Book now' button) */
+/*   */
+/* (styles that involve the plane per lesson content) */
+/* .momoyoga-lesson  */
+/* (styles that involve the drop down area per lesson) */
+/* .momoyoga-lesson-details  */
+/* (the style of displaying the teacher name) */
+/* .momoyoga-lesson-teacher  */
+/* (the style of displaying the teacher name) */
+/* .momoyoga-lesson-description  */
+/* (the style of any link to the lesson) */
+/*  */
